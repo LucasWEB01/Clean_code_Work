@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU RESPOSIVO</title>
+    <link rel="shortcut icon" href="./Assets/favicon.png.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style_exerc_chamada.css">
+
+</head>
+
+<body onresize="mudoudetamanho()"></body>
+<header>
+    <H1>L.S 🐱‍👤</H1>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickmenu()">
+        MENU
+    </span>
+
+    <menu id="itens">
+        <ul>
+            <li><a href="clean_code.html">CLEAN CODE</a></li>
+            <li><a href="Modulação.html">MODULAÇÃO</a></li>
+            <li><a href="index.html">INICIO</a></li>
+        </ul>
+    </menu>
+
+    <main>
+        <img src="./Assets/Cleancode.png.webp" alt="teste com clean-code" id="CLEAN CODE">
+        <img src="./Assets/modulação.png.webp" alt="teste com Modulação" id="MODULAÇÃO">
+        <img src="./Assets/inicio.png.webp" alt="teste com inicio" id="INICIO">
+
+
+        <article>
+            <h2>OLÁ NERD</h2>
+
+            <P>Seja bem-vindo ao nosso site! Estamos felizes em receber você e prontos para ajudar no que for preciso.
+                Aqui,
+                você encontrará todas as informações sobre nossos serviços, valores e a forma como trabalhamos para
+                oferecer
+                a melhor experiência. Navegue por nossas seções, explore nossos conteúdos e descubra como podemos
+                contribuir
+                para suas necessidades. Nossa equipe está à disposição para esclarecer dúvidas e acompanhar você nessa
+                jornada. Sinta-se à vontade para entrar em contato. É um prazer tê-lo aqui conosco!</P>
+
+
+            <p>Esse site nasceu de uma ideia simples, mas poderosa: criar um espaço digital onde qualidade, inovação e
+                atendimento personalizado estivessem sempre em primeiro lugar. Fundado por uma equipe apaixonada por
+                soluções tecnológicas e excelência em serviço, ele foi pensado para tornar mais fácil e acessível o
+                contato
+                com nossos produtos e nossa equipe.
+
+                Inicialmente, a ideia era criar um canal de comunicação direta com nossos clientes, compartilhando
+                informações claras sobre o que fazemos e como podemos ajudar. Com o tempo, o site foi evoluindo,
+                incluindo
+                novas seções, conteúdos ricos e até uma área interativa para que nossos visitantes possam explorar
+                melhor o
+                que oferecemos.
+
+                Hoje, nosso site é mais que um cartão de visita; ele representa nossa missão de transformar o
+                atendimento ao
+                cliente em uma experiência única e completa. Cada página foi desenhada com atenção aos detalhes,
+                mantendo a
+                simplicidade e a funcionalidade, sem abrir mão da inovação. Queremos que cada visitante sinta que está
+                entrando em um ambiente confiável e acolhedor, onde cada clique leva a uma descoberta e cada descoberta
+                leva
+                a uma solução.
+
+                Assim, nosso site continua a crescer e se adaptar, sempre buscando refletir o nosso compromisso com a
+                satisfação do cliente. Ele é o ponto de partida para uma relação de parceria e confiança que esperamos
+                construir com você.</p>
+        </article>
+
+    </main>
+
+    <footer>@LS</footer>
+
+    <script>
+        function mudoudetamanho() {
+            if (windo.innerWidth >= 768) {
+                itens.style.display = "block"
+            } else {
+                itens.style.display = "none"
+            }
+
+
+        }
+
+        function clickmenu(){
+
+            if (itens.style.display == "block"){
+
+                itens.style.display = "none"
+
+            } else {
+                itens.style.display = "block"
+            }
+        }
+    </script>
+
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  body {
+    background-image: url("https://i.imgur.com/8Q5Q6.jpg");
+  }
+}
+
+#burger {
+  display: none;
+}
+
+menu {
+  display: block;
+  width: 90vw;
+  margin: auto;
+  background-color: rgb(17, 17, 17);
+}
+
+menu > ul > li {
+  display: inline-block;
+  background-color: aquamarine;
+}
+
+main {
+  width: 90vw;
+  margin: auto;
+}
+
+article > h2 {
+  padding-bottom: 17px;
+  width: 90vw;
+  margin: auto;
+}
+
+article > p {
+  text-align: justify;
+  margin-bottom: 17px;
+  text-indent: 17px;
+}
+
+footer {
+  width: 90vw;
+  margin: auto;
+}
+
+img#CLENACODE {
+  display: none;
+}
+
+img#MODULAÇÃO {
+  display: block;
+}
+
+img#INICIO {
+  display: none;
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+}
+
+#burguer {
+  display: none;
+}
+
+menu {
+  display: block;
+  background-color: beige;
+}
+
+menu>ul>li {
+   display: inline-block;
+   background-color: blueviolet;
+}
+
+main {
+   width: 90vw;
+}
+
+article>h2 {
+   text-align: justify;
+   margin-bottom: 17px;
+   text-indent: 17px;
+}
+
+
+footer {
+   width: 90vw;
+   margin: auto;
+}
+</style>
+
+    </body>
+
+</html>
